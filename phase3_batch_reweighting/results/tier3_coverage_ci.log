@@ -1,0 +1,45 @@
+
+=== DIRECTION: reference=healthy_GSE178360  query=tumor_GSE127465 ===
+  alpha=0.01  naive                        point=0.959  95% CI [0.955, 0.963]  n=9492
+  alpha=0.01  structure_aware_propensity   point=0.959  95% CI [0.955, 0.962]  n=9492
+  alpha=0.01  domain_clf                   point=0.999  95% CI [0.998, 0.999]  n=9492
+  alpha=0.05  naive                        point=0.752  95% CI [0.743, 0.761]  n=9492
+  alpha=0.05  structure_aware_propensity   point=0.737  95% CI [0.728, 0.746]  n=9492
+  alpha=0.05  domain_clf                   point=0.977  95% CI [0.973, 0.980]  n=9492
+  alpha=0.1   naive                        point=0.665  95% CI [0.655, 0.675]  n=9492
+  alpha=0.1   structure_aware_propensity   point=0.670  95% CI [0.661, 0.681]  n=9492
+  alpha=0.1   domain_clf                   point=0.941  95% CI [0.936, 0.945]  n=9492
+
+=== DIRECTION: reference=tumor_GSE127465  query=healthy_GSE178360 ===
+  alpha=0.01  naive                        point=0.940  95% CI [0.933, 0.947]  n=4500
+  alpha=0.01  structure_aware_propensity   point=0.940  95% CI [0.933, 0.946]  n=4500
+  alpha=0.01  domain_clf                   point=1.000  95% CI [1.000, 1.000]  n=4500
+  alpha=0.05  naive                        point=0.836  95% CI [0.825, 0.846]  n=4500
+  alpha=0.05  structure_aware_propensity   point=0.834  95% CI [0.824, 0.846]  n=4500
+  alpha=0.05  domain_clf                   point=1.000  95% CI [0.999, 1.000]  n=4500
+  alpha=0.1   naive                        point=0.739  95% CI [0.726, 0.752]  n=4500
+  alpha=0.1   structure_aware_propensity   point=0.743  95% CI [0.731, 0.756]  n=4500
+  alpha=0.1   domain_clf                   point=0.999  95% CI [0.998, 1.000]  n=4500
+
+Saved -> D:\Research\NCS\phase3_batch_reweighting\results\tier3_coverage_ci.csv
+
+==========================================================================================
+     direction  alpha                     method  coverage    ci_lo  ci_median    ci_hi  n_query
+healthy->tumor   0.01                      naive  0.958807 0.954909   0.958702 0.962600     9492
+healthy->tumor   0.01 structure_aware_propensity  0.958597 0.954593   0.958491 0.962495     9492
+healthy->tumor   0.01                 domain_clf  0.998525 0.997682   0.998525 0.999263     9492
+healthy->tumor   0.05                      naive  0.752212 0.742941   0.752107 0.761062     9492
+healthy->tumor   0.05 structure_aware_propensity  0.737358 0.728192   0.737674 0.746210     9492
+healthy->tumor   0.05                 domain_clf  0.976507 0.973346   0.976507 0.979562     9492
+healthy->tumor   0.10                      naive  0.664770 0.655286   0.664876 0.674571     9492
+healthy->tumor   0.10 structure_aware_propensity  0.670459 0.661083   0.670565 0.680573     9492
+healthy->tumor   0.10                 domain_clf  0.940582 0.935946   0.940476 0.945114     9492
+tumor_G->healt   0.01                      naive  0.940222 0.933111   0.940444 0.946894     4500
+tumor_G->healt   0.01 structure_aware_propensity  0.939778 0.932889   0.940000 0.946450     4500
+tumor_G->healt   0.01                 domain_clf  1.000000 1.000000   1.000000 1.000000     4500
+tumor_G->healt   0.05                      naive  0.835778 0.824883   0.835778 0.845778     4500
+tumor_G->healt   0.05 structure_aware_propensity  0.834222 0.823772   0.834444 0.845561     4500
+tumor_G->healt   0.05                 domain_clf  0.999778 0.999333   0.999778 1.000000     4500
+tumor_G->healt   0.10                      naive  0.739333 0.726217   0.739111 0.752000     4500
+tumor_G->healt   0.10 structure_aware_propensity  0.743111 0.731111   0.743111 0.755778     4500
+tumor_G->healt   0.10                 domain_clf  0.998889 0.997778   0.998889 0.999778     4500

@@ -1,0 +1,15 @@
+diff --git a/conformalSC_annotator.py b/conformalSC_annotator.py
+index 592c738..c881c99 100644
+--- a/conformalSC_annotator.py
++++ b/conformalSC_annotator.py
+@@ -519,7 +519,9 @@ class ConformalSCAnnotator:
+ 
+         else:
+             obsm_layer = None
+-            self.obsm_layer = None 
++            self.obsm_layer = None
++            self.obsm = None
++            self.layer = None
+             print("obsm_layer is set to None. Data stored in adata.X will be used for annotation.")
+ 
+ 

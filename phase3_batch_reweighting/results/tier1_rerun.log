@@ -1,0 +1,48 @@
+
+=== FOLD: held-out donor = human1 ===
+  train=4620 cal=1981 query=1925 (valid query labels: 1925/1925)
+  top-1 accuracy: 0.8301
+  alpha=0.01  target=0.99 | naive cov=0.968 size=2.09 | domain_clf cov=0.976 size=8.06 | centroid cov=0.971 size=2.17 | propensity cov=0.974 size=2.24
+  alpha=0.05  target=0.95 | naive cov=0.908 size=1.35 | domain_clf cov=0.965 size=5.35 | centroid cov=0.908 size=1.37 | propensity cov=0.925 size=1.41
+  alpha=0.1   target=0.90 | naive cov=0.846 size=1.17 | domain_clf cov=0.959 size=4.35 | centroid cov=0.843 size=1.17 | propensity cov=0.876 size=1.22
+
+=== FOLD: held-out donor = human2 ===
+  train=4764 cal=2042 query=1720 (valid query labels: 1720/1720)
+  top-1 accuracy: 0.8570
+  alpha=0.01  target=0.99 | naive cov=0.984 size=2.38 | domain_clf cov=0.995 size=9.91 | centroid cov=0.984 size=2.44 | propensity cov=0.984 size=2.45
+  alpha=0.05  target=0.95 | naive cov=0.935 size=1.44 | domain_clf cov=0.943 size=6.98 | centroid cov=0.935 size=1.44 | propensity cov=0.941 size=1.47
+  alpha=0.1   target=0.90 | naive cov=0.884 size=1.22 | domain_clf cov=0.900 size=5.71 | centroid cov=0.879 size=1.22 | propensity cov=0.887 size=1.23
+
+=== FOLD: held-out donor = human3 ===
+  train=3456 cal=1482 query=3588 (valid query labels: 3588/3588)
+  top-1 accuracy: 0.8278
+  alpha=0.01  target=0.99 | naive cov=0.991 size=4.05 | domain_clf cov=1.000 size=13.40 | centroid cov=0.991 size=4.04 | propensity cov=0.991 size=4.07
+  alpha=0.05  target=0.95 | naive cov=0.948 size=1.83 | domain_clf cov=1.000 size=12.88 | centroid cov=0.950 size=1.84 | propensity cov=0.950 size=1.85
+  alpha=0.1   target=0.90 | naive cov=0.895 size=1.41 | domain_clf cov=1.000 size=12.52 | centroid cov=0.896 size=1.42 | propensity cov=0.909 size=1.43
+
+=== FOLD: held-out donor = human4 ===
+  train=5063 cal=2170 query=1293 (valid query labels: 1293/1293)
+  top-1 accuracy: 0.8306
+  alpha=0.01  target=0.99 | naive cov=0.969 size=2.42 | domain_clf cov=0.847 size=5.88 | centroid cov=0.972 size=2.46 | propensity cov=0.972 size=2.51
+  alpha=0.05  target=0.95 | naive cov=0.901 size=1.37 | domain_clf cov=0.737 size=3.51 | centroid cov=0.913 size=1.39 | propensity cov=0.915 size=1.43
+  alpha=0.1   target=0.90 | naive cov=0.858 size=1.18 | domain_clf cov=0.718 size=2.63 | centroid cov=0.857 size=1.17 | propensity cov=0.842 size=1.16
+
+Saved -> D:\Research\NCS\phase3_batch_reweighting\results\tier1_baron_pancreas_results.json
+
+======================================================================
+AGGREGATE (mean across folds)
+======================================================================
+                                  coverage  avg_size  target_coverage
+alpha method                                                         
+0.01  domain_clf                  0.954450  9.312992             0.99
+      naive                       0.977975  2.734052             0.99
+      structure_aware_centroid    0.979613  2.778430             0.99
+      structure_aware_propensity  0.980117  2.817671             0.99
+0.05  domain_clf                  0.911186  7.179846             0.95
+      naive                       0.923031  1.495204             0.95
+      structure_aware_centroid    0.926413  1.509197             0.95
+      structure_aware_propensity  0.932609  1.538385             0.95
+0.1   domain_clf                  0.894298  6.300401             0.90
+      naive                       0.870515  1.244526             0.90
+      structure_aware_centroid    0.868588  1.246445             0.90
+      structure_aware_propensity  0.878321  1.259437             0.90

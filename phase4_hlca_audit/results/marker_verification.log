@@ -1,0 +1,62 @@
+Opening HLCA core in backed mode...
+Resolved 8/8 marker genes:
+{'KRT5': 'ENSG00000186081', 'TP63': 'ENSG00000073282', 'KRT14': 'ENSG00000186847', 'SCGB1A1': 'ENSG00000149021', 'SCGB3A1': 'ENSG00000161055', 'MUC5B': 'ENSG00000117983', 'MUC5AC': 'ENSG00000215182', 'BPIFB1': 'ENSG00000125999'}
+
+'Basal, correctly annotated, respiratory basal cell' in ['Barbry_Leroy_2020', 'Jain_Misharin_2021_10Xv2', 'Krasnow_2020']: 28518 cells
+'Secretory, correctly annotated' in ['Barbry_Leroy_2020', 'Jain_Misharin_2021_10Xv2', 'Krasnow_2020']: 2980 cells
+  loading 28518 cells for 'Basal_correctly_annotated'...
+  loading 2980 cells for 'Secretory_correctly_annotated'...
+
+==========================================================================================
+MARKER SCORE SUMMARY BY GROUP
+==========================================================================================
+group                        Basal_correctly_annotated  Secretory_correctly_annotated
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+basal_score           count               28518.000000                    2980.000000
+                      mean                    0.689174                       0.016129
+                      std                     0.474742                       0.070839
+                      min                     0.000000                       0.000000
+                      25%                     0.424090                       0.000000
+                      50%                     0.709449                       0.000000
+                      75%                     0.963391                       0.000000
+                      max                     2.954201                       1.088648
+secretory_score       count               28518.000000                    2980.000000
+                      mean                    0.036169                       0.183377
+                      std                     0.208593                       0.457617
+                      min                     0.000000                       0.000000
+                      25%                     0.000000                       0.000000
+                      50%                     0.000000                       0.000000
+                      75%                     0.000000                       0.118225
+                      max                     3.317872                       4.161678
+secretory_minus_basal count               28518.000000                    2980.000000
+                      mean                   -0.653006                       0.167247
+                      std                     0.548574                       0.464342
+                      min                    -2.954201                      -1.088648
+                      25%                    -0.960174                       0.000000
+                      50%                    -0.704842                       0.000000
+                      75%                    -0.397729                       0.111735
+                      max                     3.317872                       4.161678
+
+Of 28518 'Basal, correctly annotated' cells in these 3 datasets, 862 (3.0%) have secretory_score > basal_score (secretory-marker-dominant despite Basal consensus label).
+
+Per-dataset breakdown:
+                          sum  count      mean
+dataset                                       
+Barbry_Leroy_2020         699  28093  0.024882
+Jain_Misharin_2021_10Xv2    8    222  0.036036
+Krasnow_2020              155    203  0.763547
+
+Saved -> D:\Research\NCS\phase4_hlca_audit\results\hlca_marker_verification.csv
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)

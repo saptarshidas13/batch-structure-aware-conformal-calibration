@@ -1,0 +1,36 @@
+name: annotator-env
+
+channels:
+  - pytorch
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - scipy=1.11.4
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scikit-learn=1.5.0
+  - matplotlib-base
+  - seaborn
+  - pillow
+  - rapidfuzz
+  - tqdm
+  - jupyter
+  - scanpy=1.10.1
+  - transformers
+  - pytorch=2.1.2
+  - torchvision=0.16.2
+  - torchaudio=2.1.2
+  - cpuonly
+
+  - pip
+  - pip:
+    - torchcp==1.0.2
+    - celltypist==1.6.3
+    - mygene
+    - harmonypy==0.0.10
+    # cellxgene-census intentionally omitted: its tiledbsoma dependency has
+    # no prebuilt Windows wheel and requires a C/C++ build toolchain
+    # (nmake/CMake). Not required by any script here -- HLCA core and
+    # Tabula Sapiens Blood are downloaded directly as h5ad files from
+    # CELLxGENE Discover instead (see README).

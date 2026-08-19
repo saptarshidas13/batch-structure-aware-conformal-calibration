@@ -1,0 +1,302 @@
+[
+  {
+    "held_out": "human1",
+    "top1_accuracy": 0.9761038961038961,
+    "per_alpha": {
+      "0.01": {
+        "target_coverage": 0.99,
+        "naive": {
+          "coverage": 0.9916883116883117,
+          "avg_size": 1.5251948051948052
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "domain_clf": {
+          "coverage": 1.0,
+          "avg_size": 13.993246753246753
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9906493506493507,
+          "avg_size": 1.5075324675324675
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9922077922077922,
+          "avg_size": 1.6623376623376624
+        }
+      },
+      "0.05": {
+        "target_coverage": 0.95,
+        "naive": {
+          "coverage": 0.9574025974025974,
+          "avg_size": 1.0997402597402597
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "domain_clf": {
+          "coverage": 1.0,
+          "avg_size": 13.905454545454546
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9594805194805195,
+          "avg_size": 1.0987012987012987
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9667532467532467,
+          "avg_size": 1.1184415584415583
+        }
+      },
+      "0.1": {
+        "target_coverage": 0.9,
+        "naive": {
+          "coverage": 0.9127272727272727,
+          "avg_size": 0.9880519480519481
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "domain_clf": {
+          "coverage": 0.9994805194805195,
+          "avg_size": 13.798441558441558
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.8940259740259741,
+          "avg_size": 0.9672727272727273
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9064935064935065,
+          "avg_size": 0.9787012987012987
+        }
+      }
+    }
+  },
+  {
+    "held_out": "human2",
+    "top1_accuracy": 0.9802325581395349,
+    "per_alpha": {
+      "0.01": {
+        "target_coverage": 0.99,
+        "naive": {
+          "coverage": 0.9953488372093023,
+          "avg_size": 1.8854651162790699
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "domain_clf": {
+          "coverage": 0.9994186046511628,
+          "avg_size": 13.93779069767442
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9947674418604651,
+          "avg_size": 1.8959302325581395
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.997093023255814,
+          "avg_size": 1.8982558139534884
+        }
+      },
+      "0.05": {
+        "target_coverage": 0.95,
+        "naive": {
+          "coverage": 0.9569767441860465,
+          "avg_size": 1.130232558139535
+        },
+        "domain_clf_naive": {
+          "coverage": 0.9994186046511628,
+          "avg_size": 13.97906976744186
+        },
+        "domain_clf": {
+          "coverage": 0.9994186046511628,
+          "avg_size": 13.697093023255814
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9604651162790697,
+          "avg_size": 1.1325581395348838
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9668604651162791,
+          "avg_size": 1.1406976744186046
+        }
+      },
+      "0.1": {
+        "target_coverage": 0.9,
+        "naive": {
+          "coverage": 0.913953488372093,
+          "avg_size": 1.005232558139535
+        },
+        "domain_clf_naive": {
+          "coverage": 0.9994186046511628,
+          "avg_size": 13.927906976744186
+        },
+        "domain_clf": {
+          "coverage": 0.9947674418604651,
+          "avg_size": 13.38546511627907
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.913953488372093,
+          "avg_size": 1.0023255813953489
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9017441860465116,
+          "avg_size": 0.9965116279069768
+        }
+      }
+    }
+  },
+  {
+    "held_out": "human3",
+    "top1_accuracy": 0.9470457079152731,
+    "per_alpha": {
+      "0.01": {
+        "target_coverage": 0.99,
+        "naive": {
+          "coverage": 0.9916387959866221,
+          "avg_size": 3.379877369007804
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "domain_clf": {
+          "coverage": 1.0,
+          "avg_size": 13.981047937569677
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9933110367892977,
+          "avg_size": 3.3690078037904123
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9916387959866221,
+          "avg_size": 3.287068004459309
+        }
+      },
+      "0.05": {
+        "target_coverage": 0.95,
+        "naive": {
+          "coverage": 0.9721293199554069,
+          "avg_size": 1.6758639910813824
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 13.9896878483835
+        },
+        "domain_clf": {
+          "coverage": 0.9994425863991081,
+          "avg_size": 13.885730211817169
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9698996655518395,
+          "avg_size": 1.6819955406911928
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9671125975473801,
+          "avg_size": 1.6594202898550725
+        }
+      },
+      "0.1": {
+        "target_coverage": 0.9,
+        "naive": {
+          "coverage": 0.9289297658862876,
+          "avg_size": 1.2951505016722409
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 13.962095875139353
+        },
+        "domain_clf": {
+          "coverage": 0.9983277591973244,
+          "avg_size": 13.747491638795987
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9297658862876255,
+          "avg_size": 1.2954292084726868
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.927536231884058,
+          "avg_size": 1.2929208472686733
+        }
+      }
+    }
+  },
+  {
+    "held_out": "human4",
+    "top1_accuracy": 0.9605568445475638,
+    "per_alpha": {
+      "0.01": {
+        "target_coverage": 0.99,
+        "naive": {
+          "coverage": 0.9922660479505027,
+          "avg_size": 1.382830626450116
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "domain_clf": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9891724671307038,
+          "avg_size": 1.3735498839907192
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9891724671307038,
+          "avg_size": 1.3905645784996132
+        }
+      },
+      "0.05": {
+        "target_coverage": 0.95,
+        "naive": {
+          "coverage": 0.94276875483372,
+          "avg_size": 1.0835266821345708
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "domain_clf": {
+          "coverage": 1.0,
+          "avg_size": 13.930394431554525
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9474091260634184,
+          "avg_size": 1.088940448569219
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.9412219644238206,
+          "avg_size": 1.08584686774942
+        }
+      },
+      "0.1": {
+        "target_coverage": 0.9,
+        "naive": {
+          "coverage": 0.8940448569218871,
+          "avg_size": 0.9860788863109049
+        },
+        "domain_clf_naive": {
+          "coverage": 1.0,
+          "avg_size": 14.0
+        },
+        "domain_clf": {
+          "coverage": 0.9984532095901005,
+          "avg_size": 13.756380510440835
+        },
+        "structure_aware_centroid": {
+          "coverage": 0.9095127610208816,
+          "avg_size": 0.9984532095901005
+        },
+        "structure_aware_propensity": {
+          "coverage": 0.908739365815932,
+          "avg_size": 0.9961330239752514
+        }
+      }
+    }
+  }
+]

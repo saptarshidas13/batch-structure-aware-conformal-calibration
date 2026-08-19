@@ -1,0 +1,7 @@
+Correctly annotated    n=  9465  accuracy=0.9715  95% CI [0.9680, 0.9748]
+Underannotated         n=  8335  accuracy=0.9507  95% CI [0.9462, 0.9552]
+Misannotated           n= 10173  accuracy=0.9041  95% CI [0.8985, 0.9098]
+
+Fraction of 5000 bootstrap resamples where Correct > Underannotated > Misannotated holds: 1.0000
+
+Saved -> D:\Research\NCS\phase4_hlca_audit\results\hlca_accuracy_ci.csv

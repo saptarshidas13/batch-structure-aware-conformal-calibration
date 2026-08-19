@@ -1,0 +1,170 @@
+[
+  {
+    "reference": "healthy_GSE178360",
+    "query": "tumor_GSE127465",
+    "alpha_o_results": {
+      "0.1": {
+        "n_rejected": 286,
+        "n_total_valid": 9492,
+        "per_alpha": {
+          "0.01": {
+            "target_coverage": 0.99,
+            "naive": {
+              "coverage": 0.9603519443840973,
+              "avg_size": 2.661633717140995
+            },
+            "structure_aware": {
+              "coverage": 0.9615468172930698,
+              "avg_size": 2.6578318487942645
+            }
+          },
+          "0.05": {
+            "target_coverage": 0.95,
+            "naive": {
+              "coverage": 0.7442971974799044,
+              "avg_size": 1.9997827503801868
+            },
+            "structure_aware": {
+              "coverage": 0.7474473169671954,
+              "avg_size": 2.0045622420160765
+            }
+          },
+          "0.1": {
+            "target_coverage": 0.9,
+            "naive": {
+              "coverage": 0.6584835976537041,
+              "avg_size": 1.7412557028025202
+            },
+            "structure_aware": {
+              "coverage": 0.6631544644796872,
+              "avg_size": 1.74983706278514
+            }
+          }
+        }
+      },
+      "0.3": {
+        "n_rejected": 6472,
+        "n_total_valid": 9492,
+        "per_alpha": {
+          "0.01": {
+            "target_coverage": 0.99,
+            "naive": {
+              "coverage": 0.9466887417218544,
+              "avg_size": 2.6069536423841058
+            },
+            "structure_aware": {
+              "coverage": 0.9609271523178808,
+              "avg_size": 2.6201986754966886
+            }
+          },
+          "0.05": {
+            "target_coverage": 0.95,
+            "naive": {
+              "coverage": 0.733112582781457,
+              "avg_size": 2.048675496688742
+            },
+            "structure_aware": {
+              "coverage": 0.7364238410596027,
+              "avg_size": 2.059271523178808
+            }
+          },
+          "0.1": {
+            "target_coverage": 0.9,
+            "naive": {
+              "coverage": 0.6311258278145695,
+              "avg_size": 1.7513245033112583
+            },
+            "structure_aware": {
+              "coverage": 0.6317880794701987,
+              "avg_size": 1.7516556291390728
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "reference": "tumor_GSE127465",
+    "query": "healthy_GSE178360",
+    "alpha_o_results": {
+      "0.1": {
+        "n_rejected": 4482,
+        "n_total_valid": 4500,
+        "per_alpha": {
+          "0.01": {
+            "target_coverage": 0.99,
+            "naive": {
+              "coverage": 1.0,
+              "avg_size": 2.2222222222222223
+            },
+            "structure_aware": {
+              "coverage": 1.0,
+              "avg_size": 2.2777777777777777
+            }
+          },
+          "0.05": {
+            "target_coverage": 0.95,
+            "naive": {
+              "coverage": 0.9444444444444444,
+              "avg_size": 1.8888888888888888
+            },
+            "structure_aware": {
+              "coverage": 0.8888888888888888,
+              "avg_size": 1.7777777777777777
+            }
+          },
+          "0.1": {
+            "target_coverage": 0.9,
+            "naive": {
+              "coverage": 0.9444444444444444,
+              "avg_size": 1.7777777777777777
+            },
+            "structure_aware": {
+              "coverage": 0.9444444444444444,
+              "avg_size": 1.6666666666666667
+            }
+          }
+        }
+      },
+      "0.3": {
+        "n_rejected": 4494,
+        "n_total_valid": 4500,
+        "per_alpha": {
+          "0.01": {
+            "target_coverage": 0.99,
+            "naive": {
+              "coverage": 1.0,
+              "avg_size": 2.1666666666666665
+            },
+            "structure_aware": {
+              "coverage": 1.0,
+              "avg_size": 2.0
+            }
+          },
+          "0.05": {
+            "target_coverage": 0.95,
+            "naive": {
+              "coverage": 1.0,
+              "avg_size": 1.8333333333333333
+            },
+            "structure_aware": {
+              "coverage": 1.0,
+              "avg_size": 1.8333333333333333
+            }
+          },
+          "0.1": {
+            "target_coverage": 0.9,
+            "naive": {
+              "coverage": 1.0,
+              "avg_size": 2.0
+            },
+            "structure_aware": {
+              "coverage": 1.0,
+              "avg_size": 1.5
+            }
+          }
+        }
+      }
+    }
+  }
+]

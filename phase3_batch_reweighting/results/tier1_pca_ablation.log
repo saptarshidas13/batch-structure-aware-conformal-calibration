@@ -1,0 +1,84 @@
+Shared genes across all 4 donors: 20125
+Pooled shape: (8526, 20125)
+Pooled PCA explained variance ratio (sum): 0.209
+
+=== FOLD: held-out donor = human1 ===
+  train=4620 cal=1981 query=1925 (valid query labels: 1925/1925)
+  top-1 accuracy: 0.9761
+  alpha=0.01  target=0.99 | naive cov=0.992 size=1.53 | domain_clf cov=1.000 size=13.99 | propensity cov=0.992 size=1.66
+  alpha=0.05  target=0.95 | naive cov=0.957 size=1.10 | domain_clf cov=1.000 size=13.91 | propensity cov=0.967 size=1.12
+  alpha=0.1   target=0.90 | naive cov=0.913 size=0.99 | domain_clf cov=0.999 size=13.80 | propensity cov=0.906 size=0.98
+
+=== FOLD: held-out donor = human2 ===
+  train=4764 cal=2042 query=1720 (valid query labels: 1720/1720)
+  top-1 accuracy: 0.9802
+  alpha=0.01  target=0.99 | naive cov=0.995 size=1.89 | domain_clf cov=0.999 size=13.94 | propensity cov=0.997 size=1.90
+  alpha=0.05  target=0.95 | naive cov=0.957 size=1.13 | domain_clf cov=0.999 size=13.70 | propensity cov=0.967 size=1.14
+  alpha=0.1   target=0.90 | naive cov=0.914 size=1.01 | domain_clf cov=0.995 size=13.39 | propensity cov=0.902 size=1.00
+
+=== FOLD: held-out donor = human3 ===
+  train=3456 cal=1482 query=3588 (valid query labels: 3588/3588)
+  top-1 accuracy: 0.9470
+  alpha=0.01  target=0.99 | naive cov=0.992 size=3.38 | domain_clf cov=1.000 size=13.98 | propensity cov=0.992 size=3.29
+  alpha=0.05  target=0.95 | naive cov=0.972 size=1.68 | domain_clf cov=0.999 size=13.89 | propensity cov=0.967 size=1.66
+  alpha=0.1   target=0.90 | naive cov=0.929 size=1.30 | domain_clf cov=0.998 size=13.75 | propensity cov=0.928 size=1.29
+
+=== FOLD: held-out donor = human4 ===
+  train=5063 cal=2170 query=1293 (valid query labels: 1293/1293)
+  top-1 accuracy: 0.9606
+  alpha=0.01  target=0.99 | naive cov=0.992 size=1.38 | domain_clf cov=1.000 size=14.00 | propensity cov=0.989 size=1.39
+  alpha=0.05  target=0.95 | naive cov=0.943 size=1.08 | domain_clf cov=1.000 size=13.93 | propensity cov=0.941 size=1.09
+  alpha=0.1   target=0.90 | naive cov=0.894 size=0.99 | domain_clf cov=0.998 size=13.76 | propensity cov=0.909 size=1.00
+
+Saved -> D:\Research\NCS\phase3_batch_reweighting\results\tier1_pca_ablation_results.json
+
+======================================================================
+AGGREGATE (mean across folds) -- PCA feature space
+======================================================================
+                                  coverage   avg_size  target_coverage
+alpha method                                                          
+0.01  domain_clf                  0.999855  13.978021             0.99
+      domain_clf_naive            1.000000  14.000000             0.99
+      naive                       0.992735   2.043342             0.99
+      structure_aware_centroid    0.991975   2.036505             0.99
+      structure_aware_propensity  0.992528   2.059557             0.99
+0.05  domain_clf                  0.999715  13.854668             0.95
+      domain_clf_naive            0.999855  13.992189             0.95
+      naive                       0.957319   1.247341             0.95
+      structure_aware_centroid    0.959314   1.250549             0.95
+      structure_aware_propensity  0.960487   1.251102             0.95
+0.1   domain_clf                  0.997757  13.671945             0.90
+      domain_clf_naive            0.999855  13.972501             0.90
+      naive                       0.912414   1.068628             0.90
+      structure_aware_centroid    0.911815   1.065870             0.90
+      structure_aware_propensity  0.911128   1.066067             0.90
+
+======================================================================
+COMPARISON TO GENEFORMER (main text) -- top-1 accuracy per fold
+======================================================================
+  human1: PCA top-1 = 0.9761
+  human2: PCA top-1 = 0.9802
+  human3: PCA top-1 = 0.9470
+  human4: PCA top-1 = 0.9606
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\_core\anndata.py:1756: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\_core\anndata.py:1756: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\_core\anndata.py:1756: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\_core\anndata.py:1756: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")

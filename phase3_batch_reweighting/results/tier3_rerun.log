@@ -1,0 +1,47 @@
+
+=== DIRECTION: reference=healthy_GSE178360  query=tumor_GSE127465 ===
+  PCA explained variance (ref-fit): 0.283
+  train=3150 cal=1350 query=9492 (valid: 9492/9492)
+  top-1 accuracy (cross-study): 0.4965
+  alpha=0.01  target=0.99 | naive cov=0.959 size=2.65 | domain_clf cov=1.000 size=3.00 | centroid cov=0.958 size=2.65 | propensity cov=0.959 size=2.65
+  alpha=0.05  target=0.95 | naive cov=0.747 size=1.99 | domain_clf cov=1.000 size=3.00 | centroid cov=0.751 size=2.00 | propensity cov=0.733 size=1.96
+  alpha=0.1   target=0.90 | naive cov=0.666 size=1.74 | domain_clf cov=1.000 size=3.00 | centroid cov=0.668 size=1.75 | propensity cov=0.669 size=1.75
+
+=== DIRECTION: reference=tumor_GSE127465  query=healthy_GSE178360 ===
+  PCA explained variance (ref-fit): 0.211
+  train=6644 cal=2848 query=4500 (valid: 4500/4500)
+  top-1 accuracy (cross-study): 0.5924
+  alpha=0.01  target=0.99 | naive cov=0.940 size=1.88 | domain_clf cov=1.000 size=3.00 | centroid cov=0.937 size=1.87 | propensity cov=0.937 size=1.89
+  alpha=0.05  target=0.95 | naive cov=0.832 size=1.50 | domain_clf cov=1.000 size=3.00 | centroid cov=0.844 size=1.51 | propensity cov=0.833 size=1.50
+  alpha=0.1   target=0.90 | naive cov=0.739 size=1.30 | domain_clf cov=1.000 size=3.00 | centroid cov=0.736 size=1.30 | propensity cov=0.747 size=1.32
+
+Saved -> D:\Research\NCS\phase3_batch_reweighting\results\tier3_cross_study_results.json
+
+======================================================================
+SUMMARY (both directions)
+======================================================================
+     direction alpha                     method  coverage  avg_size  target_coverage
+healthy->tumor  0.01                      naive  0.958807  2.651496             0.99
+healthy->tumor  0.01                 domain_clf  1.000000  3.000000             0.99
+healthy->tumor  0.01   structure_aware_centroid  0.957965  2.646544             0.99
+healthy->tumor  0.01 structure_aware_propensity  0.959440  2.651812             0.99
+healthy->tumor  0.05                      naive  0.746734  1.990413             0.95
+healthy->tumor  0.05                 domain_clf  1.000000  3.000000             0.95
+healthy->tumor  0.05   structure_aware_centroid  0.750737  1.998525             0.95
+healthy->tumor  0.05 structure_aware_propensity  0.733249  1.957227             0.95
+healthy->tumor   0.1                      naive  0.665613  1.739886             0.90
+healthy->tumor   0.1                 domain_clf  1.000000  3.000000             0.90
+healthy->tumor   0.1   structure_aware_centroid  0.667826  1.745470             0.90
+healthy->tumor   0.1 structure_aware_propensity  0.669195  1.749473             0.90
+tumor_G->healt  0.01                      naive  0.940222  1.883778             0.99
+tumor_G->healt  0.01                 domain_clf  1.000000  3.000000             0.99
+tumor_G->healt  0.01   structure_aware_centroid  0.936667  1.874000             0.99
+tumor_G->healt  0.01 structure_aware_propensity  0.937111  1.890222             0.99
+tumor_G->healt  0.05                      naive  0.832444  1.499111             0.95
+tumor_G->healt  0.05                 domain_clf  1.000000  2.999556             0.95
+tumor_G->healt  0.05   structure_aware_centroid  0.844222  1.511556             0.95
+tumor_G->healt  0.05 structure_aware_propensity  0.833111  1.500222             0.95
+tumor_G->healt   0.1                      naive  0.738667  1.301111             0.90
+tumor_G->healt   0.1                 domain_clf  1.000000  2.998889             0.90
+tumor_G->healt   0.1   structure_aware_centroid  0.736444  1.298222             0.90
+tumor_G->healt   0.1 structure_aware_propensity  0.747111  1.315111             0.90

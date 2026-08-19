@@ -1,0 +1,51 @@
+
+=== FOLD: held-out donor = human1 ===
+  train=4620 cal=1981 query=1925 (valid query labels: 1925/1925)
+  top-1 accuracy: 0.8301
+  alpha=0.01  target=0.99 | naive cov=0.968 size=2.09 | domain_clf_naive cov=0.976 size=8.06 | domain_clf cov=0.963 size=5.08 | centroid cov=0.969 size=2.17 | propensity cov=0.970 size=2.24
+  alpha=0.05  target=0.95 | naive cov=0.907 size=1.36 | domain_clf_naive cov=0.967 size=5.37 | domain_clf cov=0.957 size=3.04 | centroid cov=0.912 size=1.36 | propensity cov=0.920 size=1.40
+  alpha=0.1   target=0.90 | naive cov=0.848 size=1.18 | domain_clf_naive cov=0.959 size=4.34 | domain_clf cov=0.883 size=2.18 | centroid cov=0.858 size=1.19 | propensity cov=0.869 size=1.21
+
+=== FOLD: held-out donor = human2 ===
+  train=4764 cal=2042 query=1720 (valid query labels: 1720/1720)
+  top-1 accuracy: 0.8570
+  alpha=0.01  target=0.99 | naive cov=0.984 size=2.38 | domain_clf_naive cov=0.995 size=9.91 | domain_clf cov=0.995 size=8.91 | centroid cov=0.985 size=2.45 | propensity cov=0.986 size=2.45
+  alpha=0.05  target=0.95 | naive cov=0.937 size=1.44 | domain_clf_naive cov=0.943 size=6.96 | domain_clf cov=0.956 size=5.43 | centroid cov=0.933 size=1.44 | propensity cov=0.940 size=1.46
+  alpha=0.1   target=0.90 | naive cov=0.869 size=1.21 | domain_clf_naive cov=0.914 size=5.73 | domain_clf cov=0.927 size=4.19 | centroid cov=0.876 size=1.21 | propensity cov=0.895 size=1.24
+
+=== FOLD: held-out donor = human3 ===
+  train=3456 cal=1482 query=3588 (valid query labels: 3588/3588)
+  top-1 accuracy: 0.8278
+  alpha=0.01  target=0.99 | naive cov=0.991 size=4.05 | domain_clf_naive cov=1.000 size=13.40 | domain_clf cov=1.000 size=12.47 | centroid cov=0.991 size=4.04 | propensity cov=0.991 size=4.05
+  alpha=0.05  target=0.95 | naive cov=0.952 size=1.83 | domain_clf_naive cov=1.000 size=12.88 | domain_clf cov=0.999 size=11.17 | centroid cov=0.952 size=1.84 | propensity cov=0.948 size=1.84
+  alpha=0.1   target=0.90 | naive cov=0.898 size=1.42 | domain_clf_naive cov=1.000 size=12.52 | domain_clf cov=0.999 size=10.62 | centroid cov=0.898 size=1.43 | propensity cov=0.897 size=1.42
+
+=== FOLD: held-out donor = human4 ===
+  train=5063 cal=2170 query=1293 (valid query labels: 1293/1293)
+  top-1 accuracy: 0.8306
+  alpha=0.01  target=0.99 | naive cov=0.969 size=2.42 | domain_clf_naive cov=0.847 size=5.88 | domain_clf cov=0.841 size=3.51 | centroid cov=0.970 size=2.46 | propensity cov=0.973 size=2.51
+  alpha=0.05  target=0.95 | naive cov=0.910 size=1.38 | domain_clf_naive cov=0.753 size=3.52 | domain_clf cov=0.693 size=1.92 | centroid cov=0.905 size=1.37 | propensity cov=0.911 size=1.42
+  alpha=0.1   target=0.90 | naive cov=0.854 size=1.16 | domain_clf_naive cov=0.720 size=2.63 | domain_clf cov=0.695 size=1.62 | centroid cov=0.857 size=1.17 | propensity cov=0.862 size=1.18
+
+Saved -> D:\Research\NCS\phase3_batch_reweighting\results\tier1_baron_pancreas_results.json
+
+======================================================================
+AGGREGATE (mean across folds)
+======================================================================
+                                  coverage  avg_size  target_coverage
+alpha method                                                         
+0.01  domain_clf                  0.949705  7.492318             0.99
+      domain_clf_naive            0.954450  9.312992             0.99
+      naive                       0.977975  2.734052             0.99
+      structure_aware_centroid    0.979003  2.779906             0.99
+      structure_aware_propensity  0.980182  2.814537             0.99
+0.05  domain_clf                  0.901275  5.389384             0.95
+      domain_clf_naive            0.915766  7.183863             0.95
+      naive                       0.926449  1.501939             0.95
+      structure_aware_centroid    0.925371  1.503312             0.95
+      structure_aware_propensity  0.929689  1.530295             0.95
+0.1   domain_clf                  0.876162  4.652123             0.90
+      domain_clf_naive            0.898236  6.303435             0.90
+      naive                       0.866985  1.242708             0.90
+      structure_aware_centroid    0.872100  1.251337             0.90
+      structure_aware_propensity  0.880714  1.263526             0.90

@@ -1,0 +1,82 @@
+Loaded (13992, 20029)
+study              broad_cell_type
+healthy_GSE178360  Epithelial         1889
+                   Immune             1223
+                   Stromal            1388
+tumor_GSE127465    Epithelial         4501
+                   Immune             2701
+                   Stromal            2290
+dtype: int64
+
+Computing pooled PCA + Harmony integration on study...
+  pooled PCA explained variance: 0.114
+
+=== DIRECTION: reference=healthy_GSE178360  query=tumor_GSE127465 ===
+  train=3150 cal=1350 query=9492 (valid: 9492/9492)
+  top-1 accuracy (cross-study, POST-HARMONY): 0.4959
+  alpha=0.01  target=0.99 | naive cov=0.978 size=2.77 | domain_clf cov=0.956 size=2.65 | centroid cov=0.977 size=2.77 | propensity cov=0.977 size=2.76
+  alpha=0.05  target=0.95 | naive cov=0.880 size=2.34 | domain_clf cov=0.938 size=2.58 | centroid cov=0.873 size=2.34 | propensity cov=0.879 size=2.36
+D:\Research\NCS\phase3_batch_reweighting\scripts\tier3_harmony.py:158: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  print(adata.obs.groupby(["study", "broad_cell_type"]).size())
+2026-08-08 16:27:37,693 - harmonypy - INFO - Computing initial centroids with sklearn.KMeans...
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\joblib\externals\loky\backend\context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+[WinError 2] The system cannot find the file specified
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\joblib\externals\loky\backend\context.py", line 247, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_win32()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\joblib\externals\loky\backend\context.py", line 299, in _count_physical_cores_win32
+    cpu_info = subprocess.run(
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\317972\miniforge3\envs\annotator-env\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\317972\miniforge3\envs\annotator-env\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\317972\miniforge3\envs\annotator-env\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-08-08 16:27:40,139 - harmonypy - INFO - sklearn.KMeans initialization complete.
+  alpha=0.1   target=0.90 | naive cov=0.793 size=2.04 | domain_clf cov=0.893 size=2.40 | centroid cov=0.796 size=2.03 | propensity cov=0.796 size=2.05
+
+=== DIRECTION: reference=tumor_GSE127465  query=healthy_GSE178360 ===
+  train=6644 cal=2848 query=4500 (valid: 4500/4500)
+  top-1 accuracy (cross-study, POST-HARMONY): 0.6973
+  alpha=0.01  target=0.99 | naive cov=0.933 size=1.84 | domain_clf cov=0.981 size=2.79 | centroid cov=0.931 size=1.84 | propensity cov=0.925 size=1.80
+  alpha=0.05  target=0.95 | naive cov=0.852 size=1.49 | domain_clf cov=0.950 size=2.49 | centroid cov=0.854 size=1.50 | propensity cov=0.850 size=1.50
+  alpha=0.1   target=0.90 | naive cov=0.790 size=1.31 | domain_clf cov=0.901 size=2.15 | centroid cov=0.781 size=1.30 | propensity cov=0.787 size=1.30
+
+Saved -> D:\Research\NCS\phase3_batch_reweighting\results\tier3_harmony_results.json
+
+======================================================================
+SUMMARY (both directions, post-Harmony)
+======================================================================
+2026-08-08 16:27:40,257 - harmonypy - INFO - Iteration 1 of 10
+2026-08-08 16:27:45,066 - harmonypy - INFO - Iteration 2 of 10
+2026-08-08 16:27:49,723 - harmonypy - INFO - Converged after 2 iterations
+     direction alpha                     method  coverage  avg_size  target_coverage
+healthy->tumor  0.01                      naive  0.977876  2.767804             0.99
+healthy->tumor  0.01                 domain_clf  0.955752  2.645596             0.99
+healthy->tumor  0.01   structure_aware_centroid  0.977244  2.767804             0.99
+healthy->tumor  0.01 structure_aware_propensity  0.977139  2.763064             0.99
+healthy->tumor  0.05                      naive  0.880110  2.342394             0.95
+healthy->tumor  0.05                 domain_clf  0.937842  2.579751             0.95
+healthy->tumor  0.05   structure_aware_centroid  0.873156  2.343552             0.95
+healthy->tumor  0.05 structure_aware_propensity  0.879477  2.355036             0.95
+healthy->tumor   0.1                      naive  0.793194  2.035504             0.90
+healthy->tumor   0.1                 domain_clf  0.892857  2.400337             0.90
+healthy->tumor   0.1   structure_aware_centroid  0.796039  2.029815             0.90
+healthy->tumor   0.1 structure_aware_propensity  0.795512  2.048673             0.90
+tumor_G->healt  0.01                      naive  0.932889  1.841556             0.99
+tumor_G->healt  0.01                 domain_clf  0.981111  2.794889             0.99
+tumor_G->healt  0.01   structure_aware_centroid  0.930667  1.837333             0.99
+tumor_G->healt  0.01 structure_aware_propensity  0.925111  1.801556             0.99
+tumor_G->healt  0.05                      naive  0.851556  1.486444             0.95
+tumor_G->healt  0.05                 domain_clf  0.949778  2.485333             0.95
+tumor_G->healt  0.05   structure_aware_centroid  0.854000  1.495556             0.95
+tumor_G->healt  0.05 structure_aware_propensity  0.849556  1.496444             0.95
+tumor_G->healt   0.1                      naive  0.790444  1.312000             0.90
+tumor_G->healt   0.1                 domain_clf  0.901111  2.153556             0.90
+tumor_G->healt   0.1   structure_aware_centroid  0.780667  1.295111             0.90
+tumor_G->healt   0.1 structure_aware_propensity  0.787333  1.302889             0.90

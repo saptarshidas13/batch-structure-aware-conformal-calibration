@@ -1,0 +1,63 @@
+Opening HLCA core in backed mode...
+Resolved 23/23 genes. Missing: set()
+
+'Basal, correctly annotated, respiratory basal cell' in ['Barbry_Leroy_2020', 'Jain_Misharin_2021_10Xv2', 'Krasnow_2020']: 28518 cells
+Loading 28518 cells...
+
+==========================================================================================
+TEST 1: dataset-level stress score (ALL Basal cells per dataset)
+==========================================================================================
+                            count      mean  ...       75%       max
+dataset                                      ...                    
+Barbry_Leroy_2020         28093.0  0.365367  ...  0.470264  1.235169
+Jain_Misharin_2021_10Xv2    222.0  0.433310  ...  0.508531  1.277268
+Krasnow_2020                203.0  1.031356  ...  1.319503  2.787449
+
+[3 rows x 8 columns]
+
+==========================================================================================
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+C:\Users\317972\miniforge3\envs\annotator-env\Lib\site-packages\anndata\utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)
+TEST 2: within-dataset, secretory-dominant vs. basal-dominant stress score
+==========================================================================================
+
+Barbry_Leroy_2020 (n=28093):
+                      count      mean       std  ...       50%       75%       max
+secretory_dominant                               ...                              
+False               27394.0  0.361825  0.163041  ...  0.359272  0.466835  1.171016
+True                  699.0  0.504164  0.217663  ...  0.485702  0.644373  1.235169
+
+[2 rows x 8 columns]
+  Mann-Whitney U (secretory-dominant vs. basal-dominant stress score): p=4.7e-67
+
+Jain_Misharin_2021_10Xv2 (n=222):
+                    count      mean       std  ...       50%       75%       max
+secretory_dominant                             ...                              
+False               214.0  0.430082  0.181078  ...  0.411909  0.499377  1.277268
+True                  8.0  0.519663  0.194488  ...  0.465643  0.624869  0.839877
+
+[2 rows x 8 columns]
+  Mann-Whitney U (secretory-dominant vs. basal-dominant stress score): p=0.1648
+
+Krasnow_2020 (n=203):
+                    count      mean       std  ...      50%       75%       max
+secretory_dominant                             ...                             
+False                48.0  1.382242  0.578077  ...  1.35926  1.731978  2.734053
+True                155.0  0.922694  0.357165  ...  0.87231  1.134110  2.787449
+
+[2 rows x 8 columns]
+  Mann-Whitney U (secretory-dominant vs. basal-dominant stress score): p=1.112e-07
+
+Saved -> D:\Research\NCS\phase4_hlca_audit\results\hlca_stress_confound_check.csv

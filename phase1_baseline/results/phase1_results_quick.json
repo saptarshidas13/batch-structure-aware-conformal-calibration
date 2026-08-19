@@ -1,0 +1,285 @@
+[
+  {
+    "held_out_donor": "human1",
+    "n_query_cells": 1925,
+    "test_results": {
+      "0.01": {
+        "Coverage_rate": 0.9906976819038391,
+        "CovGap": 0.8447014093399048,
+        "Average_size": 1.0821704864501953,
+        "Size_distribution": {
+          "0": 1,
+          "1": 595,
+          "2": 44,
+          "3": 5
+        }
+      },
+      "0.05": {
+        "Coverage_rate": 0.930232584476471,
+        "CovGap": 4.430077075958252,
+        "Average_size": 0.9813953638076782,
+        "Size_distribution": {
+          "0": 38,
+          "1": 581,
+          "2": 26
+        }
+      },
+      "0.1": {
+        "Coverage_rate": 0.9054263830184937,
+        "CovGap": 2.9073641300201416,
+        "Average_size": 0.9441860318183899,
+        "Size_distribution": {
+          "0": 55,
+          "1": 571,
+          "2": 19
+        }
+      }
+    },
+    "ood_performance": {
+      "accuracy": 0.8961038961038961,
+      "precision": 0.0,
+      "recall": 0.0,
+      "auroc": NaN
+    },
+    "alpha_OOD": 0.04,
+    "per_alpha": {
+      "0.01": {
+        "target_coverage": 0.99,
+        "empirical_coverage_id_only": 0.901840490797546,
+        "avg_set_size_id_only": 1.1143335192414947,
+        "empirical_coverage_full_query": 0.84,
+        "avg_set_size_full_query": 1.1864935064935065
+      },
+      "0.05": {
+        "target_coverage": 0.95,
+        "empirical_coverage_id_only": 0.8784160624651423,
+        "avg_set_size_id_only": 1.0161740100390406,
+        "empirical_coverage_full_query": 0.8181818181818182,
+        "avg_set_size_full_query": 1.054025974025974
+      },
+      "0.1": {
+        "target_coverage": 0.9,
+        "empirical_coverage_id_only": 0.8248745119910764,
+        "avg_set_size_id_only": 0.9481316229782487,
+        "empirical_coverage_full_query": 0.7683116883116883,
+        "avg_set_size_full_query": 0.9761038961038961
+      }
+    },
+    "top1_accuracy": 0.8363636363636363
+  },
+  {
+    "held_out_donor": "human2",
+    "n_query_cells": 1720,
+    "test_results": {
+      "0.01": {
+        "Coverage_rate": 0.9866270422935486,
+        "CovGap": 1.3893578052520752,
+        "Average_size": 1.120356559753418,
+        "Size_distribution": {
+          "0": 6,
+          "1": 600,
+          "2": 57,
+          "3": 5,
+          "4": 1,
+          "5": 3,
+          "6": 1
+        }
+      },
+      "0.05": {
+        "Coverage_rate": 0.9554234743118286,
+        "CovGap": 2.815293550491333,
+        "Average_size": 1.0148588418960571,
+        "Size_distribution": {
+          "0": 27,
+          "1": 611,
+          "2": 33,
+          "3": 2
+        }
+      },
+      "0.1": {
+        "Coverage_rate": 0.9093610644340515,
+        "CovGap": 3.633000373840332,
+        "Average_size": 0.9524517059326172,
+        "Size_distribution": {
+          "0": 57,
+          "1": 592,
+          "2": 23,
+          "3": 1
+        }
+      }
+    },
+    "ood_performance": {
+      "accuracy": 0.85,
+      "precision": 0.0,
+      "recall": 0.0,
+      "auroc": NaN
+    },
+    "alpha_OOD": 0.1,
+    "per_alpha": {
+      "0.01": {
+        "target_coverage": 0.99,
+        "empirical_coverage_id_only": 0.8492581602373888,
+        "avg_set_size_id_only": 1.1056379821958457,
+        "empirical_coverage_full_query": 0.8319767441860465,
+        "avg_set_size_full_query": 1.1505813953488373
+      },
+      "0.05": {
+        "target_coverage": 0.95,
+        "empirical_coverage_id_only": 0.8225519287833828,
+        "avg_set_size_id_only": 1.0118694362017804,
+        "empirical_coverage_full_query": 0.8058139534883721,
+        "avg_set_size_full_query": 1.0465116279069768
+      },
+      "0.1": {
+        "target_coverage": 0.9,
+        "empirical_coverage_id_only": 0.7869436201780415,
+        "avg_set_size_id_only": 0.9608308605341246,
+        "empirical_coverage_full_query": 0.7709302325581395,
+        "avg_set_size_full_query": 0.9895348837209302
+      }
+    },
+    "top1_accuracy": 0.8261627906976744
+  },
+  {
+    "held_out_donor": "human3",
+    "n_query_cells": 3588,
+    "test_results": {
+      "0.01": {
+        "Coverage_rate": 0.98893803358078,
+        "CovGap": 1.084463119506836,
+        "Average_size": 1.0752211809158325,
+        "Size_distribution": {
+          "0": 5,
+          "1": 413,
+          "2": 32,
+          "3": 1,
+          "6": 1
+        }
+      },
+      "0.05": {
+        "Coverage_rate": 0.9668141603469849,
+        "CovGap": 3.883932113647461,
+        "Average_size": 1.002212405204773,
+        "Size_distribution": {
+          "0": 13,
+          "1": 427,
+          "2": 11,
+          "4": 1
+        }
+      },
+      "0.1": {
+        "Coverage_rate": 0.9159291982650757,
+        "CovGap": 4.688549041748047,
+        "Average_size": 0.9314159154891968,
+        "Size_distribution": {
+          "0": 36,
+          "1": 412,
+          "2": 3,
+          "3": 1
+        }
+      }
+    },
+    "ood_performance": {
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "auroc": NaN
+    },
+    "alpha_OOD": 0.0,
+    "per_alpha": {
+      "0.01": {
+        "target_coverage": 0.99,
+        "empirical_coverage_id_only": 0.9913594470046083,
+        "avg_set_size_id_only": 1.131336405529954,
+        "empirical_coverage_full_query": 0.9593088071348941,
+        "avg_set_size_full_query": 1.1825529542920847
+      },
+      "0.05": {
+        "target_coverage": 0.95,
+        "empirical_coverage_id_only": 0.9533410138248848,
+        "avg_set_size_id_only": 1.0092165898617511,
+        "empirical_coverage_full_query": 0.9225195094760312,
+        "avg_set_size_full_query": 1.0390189520624302
+      },
+      "0.1": {
+        "target_coverage": 0.9,
+        "empirical_coverage_id_only": 0.8983294930875576,
+        "avg_set_size_id_only": 0.9403801843317973,
+        "empirical_coverage_full_query": 0.8692865105908584,
+        "avg_set_size_full_query": 0.9618171683389075
+      }
+    },
+    "top1_accuracy": 0.9464882943143813
+  },
+  {
+    "held_out_donor": "human4",
+    "n_query_cells": 1293,
+    "test_results": {
+      "0.01": {
+        "Coverage_rate": 0.9867256879806519,
+        "CovGap": 0.9178630113601685,
+        "Average_size": 1.0663716793060303,
+        "Size_distribution": {
+          "0": 7,
+          "1": 627,
+          "2": 39,
+          "3": 4,
+          "6": 1
+        }
+      },
+      "0.05": {
+        "Coverage_rate": 0.9572271108627319,
+        "CovGap": 1.2470253705978394,
+        "Average_size": 1.002949833869934,
+        "Size_distribution": {
+          "0": 23,
+          "1": 632,
+          "2": 22,
+          "4": 1
+        }
+      },
+      "0.1": {
+        "Coverage_rate": 0.9188790321350098,
+        "CovGap": 3.5806775093078613,
+        "Average_size": 0.9542772769927979,
+        "Size_distribution": {
+          "0": 50,
+          "1": 610,
+          "2": 17,
+          "3": 1
+        }
+      }
+    },
+    "ood_performance": {
+      "accuracy": 0.9373549883990719,
+      "precision": 0.0,
+      "recall": 0.0,
+      "auroc": NaN
+    },
+    "alpha_OOD": 0.1,
+    "per_alpha": {
+      "0.01": {
+        "target_coverage": 0.99,
+        "empirical_coverage_id_only": 0.9174236168455822,
+        "avg_set_size_id_only": 1.0999174236168456,
+        "empirical_coverage_full_query": 0.8592420726991493,
+        "avg_set_size_full_query": 1.165506573859242
+      },
+      "0.05": {
+        "target_coverage": 0.95,
+        "empirical_coverage_id_only": 0.8637489677952106,
+        "avg_set_size_id_only": 1.0,
+        "empirical_coverage_full_query": 0.8089713843774169,
+        "avg_set_size_full_query": 1.0525908739365817
+      },
+      "0.1": {
+        "target_coverage": 0.9,
+        "empirical_coverage_id_only": 0.8133773740710157,
+        "avg_set_size_id_only": 0.9322873658133773,
+        "empirical_coverage_full_query": 0.7617942768754834,
+        "avg_set_size_full_query": 0.9706109822119103
+      }
+    },
+    "top1_accuracy": 0.8360402165506574
+  }
+]
